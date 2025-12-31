@@ -63,7 +63,10 @@
                     <h2 class="section-heading text-uppercase mb-4">Send Us a Message</h2>
                     <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contactForm" />
-                        
+                            <!-- Add this hidden field for spam protection -->
+						<p class="d-none">
+							<label>Don't fill this out if you're human: <input name="bot-field" /></label>
+						</p>
                         <div class="row mb-3">
                             <div class="col-md-6">
                                 <div class="form-group">
